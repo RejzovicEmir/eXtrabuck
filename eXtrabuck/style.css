@@ -1,0 +1,211 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial;
+padding: 10px;
+background-color: white;
+text-align: center;
+}
+
+h1 {
+font-size: 40px;
+color:#538834;
+}
+h2{
+color: #538834;
+font-weight: bolder;
+}
+
+a{
+text-decoration: none;
+}
+p{
+font-size: 20px;
+}
+
+.image{
+border: 0;
+display: block;
+padding: 0;
+width: 100%;
+}
+
+/* sections*/
+#logo {
+padding: 30px;
+text-align: center;
+margin-top: -5%;
+}
+
+#home{
+margin-top: 10%;
+}
+#footer h2{
+color: #000;
+}
+
+.section{
+background: #fff;
+border: 2px solid #538834;
+border-radius: 15px;
+}
+.section-noborder{
+border: none;
+}
+
+.section h3, li{
+color: #000000;
+font-weight: bold;
+text-decoration: none;
+list-style-type: none;
+}
+.section-noborder h3, li{
+color: #000000;
+font-weight: bold;
+text-decoration: none;
+list-style-type: none;
+}
+
+.section a{
+font-size: 20px;
+color: #538834;
+font-weight: bold;
+text-decoration: none;
+justify-items: center;
+}
+.section-noborder a{
+font-size: 20px;
+color: #538834;
+font-weight: bold;
+text-decoration: none;
+justify-items: center;
+}
+.section a:hover{
+color: #345d1c;
+}
+.section-noborder a:hover{
+color: #345d1c;
+}
+/* Style the top navigation bar */
+.nav {
+overflow: hidden;
+background-color: #fff;
+border: 2px solid #538834;
+border-radius: 15px;
+}
+
+/* Style the nav links */
+.nav a {
+float: none;
+display: block;
+color:#538834;
+font-weight: bolder;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.selected{
+background-color: #538834;
+color: #fff!important;
+}
+/* Change color on hover */
+.nav a:hover {
+background-color: #538834;
+color: #fff;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+float: left;
+width: 25%;
+}
+
+/* Right column */
+.rightcolumn {
+float: left;
+width: 75%;
+}
+/* Add a card effect for articles */
+.card {
+padding: 20px;
+margin-top: 20px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+
+.button{
+background-color: #538834;
+color: white;
+margin-bottom: 20px;
+font-size: 20px;
+border-radius: 5px;
+border: none;
+}
+.button-text{
+color: white!important;
+}
+.button:hover{
+background-color: #345d1c;
+transition: all .2s ease-in-out;
+transform: scale(1.2);
+}
+#contact-pic{
+width: 100%;
+}
+.Flags img{
+width: 30%;
+height:auto;
+}
+.Flags {
+display: grid;
+grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+background: rgb(223, 223, 223);
+padding-top: 35px;
+}
+#local-stores, #online-stores{
+display: grid;
+grid-template-columns: 33% 33% 33%;
+}
+#reg-link{
+font-size: 20px;
+color: #538834;
+font-weight: bold;
+text-decoration: none;
+justify-items: center;
+}
+#reg-link:hover{
+color: #345d1c;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+.leftcolumn, .rightcolumn {   
+  width: 100%;
+  padding: 0;
+}
+.Flags, #local-stores, #online-stores{
+  display: block;
+  } 
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.nav a {
+  float: none;
+  width: 100%;
+  } 
+  li{
+    text-align: left!important;
+  } 
+}
